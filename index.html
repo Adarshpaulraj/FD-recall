@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Dice game</h1>
+        <div class="body-section">
+            <div class="player1">
+                <h3>Player 1</h3> 
+                <h5>Score</h5>
+                <h1 id="total1">0</h1>
+                <button class="btn btn-outline-primary  " id="btn1" onclick="player1()">Roll now</button>
+            </div>
+            <div class="img-section">
+                <h5 id="score">Player</h5>
+                <img src="./dice1.png" id="img1" alt="">
+            </div>
+            <div class="player2">
+                <h3>Player 2</h3> 
+                <h5>Score</h5>
+                <h1 id="total2">0</h1>
+                <button class="btn btn-outline-primary " id="btn2" onclick="player2()" >Roll now</button>
+            </div>
+            <!-- https://png.pngtree.com/png-clipart/20200224/original/
+            pngtree-playing-dice-vector-set-realistic-3d-illustration-of-two
+            -white-dice-png-image_5222159.jpg -->
+          </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+</body>
+</html>

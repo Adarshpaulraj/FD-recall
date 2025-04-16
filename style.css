@@ -1,0 +1,39 @@
+.header{
+    text-align: center;
+    margin: 30px;
+    font-size: 60px;
+    font-family: ' sans-serif';
+    font-weight: 900;
+    
+}
+
+.body-section{
+
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    margin-top: 90px;
+}
+.player1,.player2{
+    line-height: 120px;
+    text-align: center;
+    font-weight: 900;
+
+}
+.img-section{
+    position: absolute;
+    top: 160px;
+    text-align: center;
+     margin-top: 0% !important;
+}
+.img-section h5{
+    margin-bottom: 30px;
+    margin-top: 0%;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    
+}
+ 
