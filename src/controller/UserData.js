@@ -10,6 +10,18 @@ let getUsers = async(req,res)=>{
     }
 }
 
+let getUsersById = async(req,res)=>{
+    try {
+       let id = await userModel.findOne({_id:req.params.id})
+        if(id){
+          res.status(200).send({message:"get by id users successfuly",id})  
+        } 
+    } catch (error) {
+        res.status(400).send({message:"invalid users",error:error.message})
+ 
+    }
+}
+
 let create = async(req,res)=>{
     try {
      let data = await userModel.create(req.body) 
@@ -54,5 +66,6 @@ module.exports = {
     create,
     getUsers,
     editUser,
+    getUsersById,
     deleteUser
 }
