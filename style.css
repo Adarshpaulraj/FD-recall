@@ -1,0 +1,12 @@
+.tn{
+    color: brown;
+    text-align: center;
+}
+.blue{
+    width: 80px;
+     border: 3px solid green;
+}
+.red{
+    width: 80px;
+     border: 3px solid rgb(133, 216, 16);
+}
