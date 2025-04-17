@@ -24,8 +24,8 @@ let getUsersById = async(req,res)=>{
 
 let create = async(req,res)=>{
     try {
-        const {firtName,lastName,email}=req.body
-     let data = await userModel.create({firstName,lastName}) 
+        const {firstName,lastName,email}=req.body
+     let data = await userModel.create({firstName,lastName,email}) 
       res.status(201).send({message:"user created succesfully",data}) 
     } catch (error) {
         res.status(400).send({message:"invalid users",error:error.message})
