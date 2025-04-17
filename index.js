@@ -1,8 +1,9 @@
 let express = require('express')
-
+const cors = require('cors')
 const AppRouter = require('./src/routes/index')
 require('dotenv').config()
 let app = express()
+app.use(cors())
 app.use(express.json())
 
 app.use('/',AppRouter)
